@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-100 font-sans antialiased">
+    <!-- Navbar-->
+    <nav class="bg-blue-600 p-4 text-white flex justify-between">
+      <div>
+        <h1 class="text-3xl font-bold">AI Blog Generator</h1>
+      </div>
+      <div>
+        <a href="#" class="text-white hover:underline"> Logout</a>
+      </div>
+    </nav>
+    <br />
+    <br />
+    <!-- Main content -->
+    <div class="flex-grow container mx-auto mt-10 px-4 sm:px-0">
+      <div
+        class="max-w-3xl mx-auto bg-white p-6 rounded-lg shadow-md transition-transform transform hover:scale- flex flex-col"
+      >
+        <!-- Ibtroduction section-->
+        <div class="text-center">
+          <h2 class="text-2xl font-semibold mb-4">
+            Welcome to AI blog generator
+          </h2>
+          <p class="text-gray-700">
+            Generate high quality blog articles from Youtube videos Simply enter
+            the link from youtube and let ai generate content!
+          </p>
+        </div>
+        <br />
+        <!-- Youtube section-->
+        <div>
+          <h2 class="text-xl- mb-4 font-semibold">Enter youtube link</h2>
+          <div class="flex space-x-4">
+            <input
+              id="youtubeLink"
+              type="url"
+              placeholder="Paste yotube link.."
+              class="flex-grow p-2 border border-blue-400 rounded-l-md"
+            />
+            <button
+              id="generatedBlogButton"
+              class="bg-blue-600 text-whitepx-4py-2 rounded-r-md hover:bg-blue-700 transition-colors"
+            >
+              Generate blog
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
